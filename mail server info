@@ -1,0 +1,53 @@
+* URLs of installed web applications:
+*
+* - Roundcube webmail: https://mail.mohitjhalani.xyz/mail/
+* - netdata (monitor): https://mail.mohitjhalani.xyz/netdata/
+*
+* - Web admin panel (iRedAdmin): https://mail.mohitjhalani.xyz/iredadmin/
+*
+* You can login to above links with below credential:
+*
+* - Username: postmaster@mohitjhalani.xyz
+* - Password: Mohit@123
+*
+=======================================================================================
+console wen hosting panel :-
+https://console.kamatera.com/
+=======================================================================================
+https://www.linuxbabe.com/mail-server/ubuntu-20-04-iredmail-server-installation
+=====================================================================================
+username- info@mohitjhalani.xyz
+password- Mohit@123
+==========================================================================================================================================
+
+
+ URLs of installed web applications:
+*
+* - Roundcube webmail: https://mail.mohitjhalani.xyz/mail/
+* - SOGo groupware: https://mail.mohitjhalani.xyz/SOGo/
+* - netdata (monitor): https://mail.mohitjhalani.xyz/netdata/
+*
+* - Web admin panel (iRedAdmin): https://mail.mohitjhalani.xyz/iredadmin/
+*
+* You can login to above links with below credential:
+*
+* - Username: postmaster@mohitjhalani.xyz
+* - Password: Ranosys@123
+
+
+
+
+/etc/letsencrypt/live/mail.mohitjhalani.xyz/fullchain.pem
+   /etc/letsencrypt/live/mail.mohitjhalani.xyz/privkey.pem
+   
+ssl_certificate /etc/letsencrypt/live/mail.mohitjhalani.xyz/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/mail.mohitjhalani.xyz/privkey.pem;
+
+smtpd_tls_key_file = /etc/letsencrypt/live/mail.mohitjhalani.xyz/privkey.pem
+smtpd_tls_cert_file = /etc/letsencrypt/live/mail.mohitjhalani.xyz/cert.pem
+smtpd_tls_CAfile = /etc/letsencrypt/live/mail.mohitjhalani.xyz/chain.pem
+
+ssl_cert = </etc/letsencrypt/live/mail.mohitjhalani.xyz/fullchain.pem
+ssl_key = </etc/letsencrypt/live/mail.mohitjhalani.xyz/privkey.pem
+*
+
